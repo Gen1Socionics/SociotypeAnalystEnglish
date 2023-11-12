@@ -20,21 +20,21 @@ import static org.socionicasys.analyst.types.Aspect.T;
  */
 public enum Sociotype {
 	ILE (Sign.PLUS,  I, L, F, R, S, E, T, P),
-	SEI (Sign.PLUS,  S, E, T, P, I, L, F, R),
-	ESE (Sign.MINUS, E, S, P, T, L, I, R, F),
+	SEI (Sign.MINUS,  S, E, T, P, I, L, F, R),
+	ESE (Sign.PLUS, E, S, P, T, L, I, R, F),
 	LII (Sign.MINUS, L, I, R, F, E, S, P, T),
-	EIE (Sign.PLUS,  E, T, P, S, L, F, R, I),
+	EIE (Sign.MINUS,  E, T, P, S, L, F, R, I),
 	LSI (Sign.PLUS,  L, F, R, I, E, T, P, S),
 	SLE (Sign.MINUS, F, L, I, R, T, E, S, P),
-	IEI (Sign.MINUS, T, E, S, P, F, L, I, R),
+	IEI (Sign.PLUS, T, E, S, P, F, L, I, R),
 	SEE (Sign.PLUS,  F, R, I, L, T, P, S, E),
-	ILI (Sign.PLUS,  T, P, S, E, F, R, I, L),
-	LIE (Sign.MINUS, P, T, E, S, R, F, L, I),
+	ILI (Sign.MINUS,  T, P, S, E, F, R, I, L),
+	LIE (Sign.PLUS, P, T, E, S, R, F, L, I),
 	ESI (Sign.MINUS, R, F, L, I, P, T, E, S),
-	LSE (Sign.PLUS,  P, S, E, T, R, I, L, F),
+	LSE (Sign.MINUS,  P, S, E, T, R, I, L, F),
 	EII (Sign.PLUS,  R, I, L, F, P, S, E, T),
 	IEE (Sign.MINUS, I, R, F, L, S, P, T, E),
-	SLI (Sign.MINUS, S, P, T, E, I, R, F, L);
+	SLI (Sign.PLUS, S, P, T, E, I, R, F, L);
 
 	/**
 	 * Набор функций модели.
@@ -114,8 +114,8 @@ public enum Sociotype {
 			functions.add(new Function(aspect, i + 1, currentSign));
 			// Знаки в модели чередуются по номеру функции,
 			// за исключением знаков функций 4 и 5, которые равны
-			if (i != 3) {
-				currentSign = currentSign.inverse();
+			if (i > 4) {
+				currentSign = firstSign.inverse();
 			}
 		}
 	}

@@ -198,7 +198,7 @@ public class LegacyHtmlWriter extends SwingWorker<Void, Void> {
 		"<table border=\"0\" cellpadding=\"10\" cellspacing=\"0\" style=\"background-color:#023020; border-collapse:collapse; width:100%\">" +
 		"	<tbody>" +
 		"		<tr>" +
-		"			<td><span style=\"font-size:48px\"><img alt=\"\" src=\"https://gcdnb.pbrd.co/images/qC8oCAr3JA6B.png?o=1\" style=\"height:84px; width:100px\" /><span style=\"color:#ffffff\"><span style=\"font-family:Lucida Sans Unicode,Lucida Grande,sans-serif\"><strong><sup>SSS Typing Protocol</sup></strong></span></span></span></td>" +
+		"			<td><span style=\"font-size:48px\"> <style=\"height:84px; width:100px\" /><span style=\"color:#ffffff\"><span style=\"font-family:Lucida Sans Unicode,Lucida Grande,sans-serif\"><strong><sup>SCS Typing Protocol</sup></strong></span></span></span></td>" +
 		"		</tr>" +
 		"	</tbody>" +
 		"</table>"		
